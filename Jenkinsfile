@@ -22,7 +22,7 @@ podTemplate(label: 'mypod',
                 docker build -t \${REGISTRY}/\${NAMESPACE}/bluecompute-ce-web:${env.BUILD_NUMBER} .
                 """
             }
-            stage('Push Docker Image to Registry') {
+            stage('Push Docker a Image to Registry') {
                 sh """
                 #!/bin/bash
                 NAMESPACE=`cat /var/run/configs/registry-config/namespace`
