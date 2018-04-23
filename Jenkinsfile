@@ -38,7 +38,7 @@ podTemplate(label: 'mypod',
             }
         }
         container('kubectl') {
-            stage('Deploy new Docker Image after update') {
+            stage('Deploy new Docker Image soon after update') {
                 sh """
                 #!/bin/bash
                 set +e
