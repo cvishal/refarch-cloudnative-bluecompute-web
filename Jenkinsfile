@@ -39,7 +39,7 @@ podTemplate(label: 'mypod',
             }
         }
         container('kubectl') {
-            stage('Deploy new Docker Image') {
+            stage('Deploy new Docker Image for demo') {
                 sh """
                 #!/bin/bash
                 set +e
