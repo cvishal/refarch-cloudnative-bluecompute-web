@@ -12,7 +12,7 @@ podTemplate(label: 'mypod',
     node('mypod') {
         checkout scm
         container('docker') {
-            stage('Build Docker a Image') {
+            stage('Build Docker a Image for demo') {
                 sh """
                 #!/bin/bash
                 NAMESPACE=`cat /var/run/configs/registry-config/namespace`
